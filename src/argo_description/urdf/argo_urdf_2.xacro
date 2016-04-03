@@ -41,7 +41,7 @@
           filename="package://argo_description/meshes/argo_base.STL" />
       </geometry>
       <material
-        name="">
+        name="Yellow1">
         <color
           rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
       </material>
@@ -86,7 +86,7 @@
           filename="package://argo_description/meshes/FLW.STL" />
       </geometry>
       <material
-        name="">
+        name="Grey">
         <color
           rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
       </material>
@@ -140,7 +140,7 @@
           filename="package://argo_description/meshes/MLW.STL" />
       </geometry>
       <material
-        name="">
+        name="Grey">
         <color
           rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
       </material>
@@ -194,7 +194,7 @@
           filename="package://argo_description/meshes/RLW.STL" />
       </geometry>
       <material
-        name="">
+        name="Grey">
         <color
           rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
       </material>
@@ -248,7 +248,7 @@
           filename="package://argo_description/meshes/FRW.STL" />
       </geometry>
       <material
-        name="">
+        name="Grey">
         <color
           rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
       </material>
@@ -302,7 +302,7 @@
           filename="package://argo_description/meshes/MRW.STL" />
       </geometry>
       <material
-        name="">
+        name="Grey">
         <color
           rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
       </material>
@@ -356,7 +356,7 @@
           filename="package://argo_description/meshes/RRW.STL" />
       </geometry>
       <material
-        name="">
+        name="Grey">
         <color
           rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
       </material>
