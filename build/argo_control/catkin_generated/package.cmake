@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "argo_control")
+set(argo_control_MAINTAINER "bismaya <bismaya@todo.todo>")
+set(argo_control_DEPRECATED "")
+set(argo_control_VERSION "0.0.0")
+set(argo_control_BUILD_DEPENDS "ros_control" "ros_controllers")
+set(argo_control_RUN_DEPENDS "ros_control" "ros_controllers")
+set(argo_control_BUILDTOOL_DEPENDS "catkin")

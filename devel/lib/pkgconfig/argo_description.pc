@@ -1,0 +1,8 @@
+prefix=/home/bismaya/catkin_ws/devel
+
+Name: argo_description
+Description: Description of argo_description
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/bismaya/catkin_ws/devel/lib 
+Requires: 

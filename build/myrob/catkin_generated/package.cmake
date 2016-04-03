@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "myrob")
+set(myrob_MAINTAINER "bismaya <bismaya@todo.todo>")
+set(myrob_DEPRECATED "")
+set(myrob_VERSION "0.0.0")
+set(myrob_BUILD_DEPENDS "roscpp" "rospy" "std_msgs" "urdf")
+set(myrob_RUN_DEPENDS "roscpp" "rospy" "std_msgs" "urdf")
+set(myrob_BUILDTOOL_DEPENDS "catkin")

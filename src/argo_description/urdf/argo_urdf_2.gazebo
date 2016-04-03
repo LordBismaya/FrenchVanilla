@@ -1,0 +1,130 @@
+<?xml version="1.0"?>
+<robot
+name="argo_urdf_2" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <!-- ros_control plugin -->
+  <gazebo>
+    <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
+      <robotNamespace>/</robotNamespace>
+      <robotSimType>gazebo_ros_control/DefaultRobotHWSim</robotSimType>
+    </plugin>
+  </gazebo>
+  <!-- Link1 -->
+  <gazebo reference="argo_base">
+    <material>Gazebo/Orange</material>
+  </gazebo>
+
+  <!-- Link2 -->
+  <gazebo reference="FLW">
+      <material>Gazebo/Grey</material>
+      <mu1 value="1.0"/>
+			<mu2 value="1.0"/>
+			<kp value="10000000.0" />
+			<kd value="1.0" />
+			<fdir1 value="1 0 0"/>
+  </gazebo>
+<!-- Link2 -->
+  <gazebo reference="FRW">
+      <material>Gazebo/Grey</material>
+      <mu1 value="1.0"/>
+			<mu2 value="1.0"/>
+			<kp value="10000000.0" />
+			<kd value="1.0" />
+			<fdir1 value="1 0 0"/>
+  </gazebo>
+<!-- Link2 -->
+  <gazebo reference="MLW">
+      <material>Gazebo/Grey</material>
+      <mu1 value="1.0"/>
+			<mu2 value="1.0"/>
+			<kp value="10000000.0" />
+			<kd value="1.0" />
+			<fdir1 value="1 0 0"/>
+  </gazebo>
+<!-- Link2 -->
+  <gazebo reference="MRW">
+      <material>Gazebo/Grey</material>
+      <mu1 value="1.0"/>
+			<mu2 value="1.0"/>
+			<kp value="10000000.0" />
+			<kd value="1.0" />
+			<fdir1 value="1 0 0"/>
+  </gazebo>
+<!-- Link2 -->
+  <gazebo reference="RLW">
+      <material>Gazebo/Grey</material>
+      <mu1 value="1.0"/>
+			<mu2 value="1.0"/>
+			<kp value="10000000.0" />
+			<kd value="1.0" />
+			<fdir1 value="1 0 0"/>
+  </gazebo>
+<!-- Link2 -->
+  <gazebo reference="RRW">
+      <material>Gazebo/Grey</material>
+      <mu1 value="1.0"/>
+			<mu2 value="1.0"/>
+			<kp value="10000000.0" />
+			<kd value="1.0" />
+			<fdir1 value="1 0 0"/>
+  </gazebo>
+
+  <!-- camera_link -->
+  <gazebo reference="camera_link">
+    <mu1>0.2</mu1>
+    <mu2>0.2</mu2>
+    <material>Gazebo/Red</material>
+  </gazebo>
+
+
+  <gazebo>
+      <plugin name="imu_controller" filename="libhector_gazebo_ros_imu.so">
+        <robotNamespace>/</robotNamespace>
+        <updateRate>50.0</updateRate>
+        <bodyName>argo_base</bodyName>
+        <topicName>/imu/data</topicName>
+        <accelDrift>0.005 0.005 0.005</accelDrift>
+        <accelGaussianNoise>0.005 0.005 0.005</accelGaussianNoise>
+        <rateDrift>0.005 0.005 0.005 </rateDrift>
+        <rateGaussianNoise>0.005 0.005 0.005 </rateGaussianNoise>
+        <headingDrift>0.005</headingDrift>
+        <headingGaussianNoise>0.005</headingGaussianNoise>
+      </plugin>
+    </gazebo>
+
+    <gazebo>
+      <plugin name="gps_controller" filename="libhector_gazebo_ros_gps.so">
+        <updateRate>40</updateRate>
+        <robotNamespace>/</robotNamespace>
+        <bodyName>argo_base</bodyName>
+        <frameId>argo_base</frameId>
+        <topicName>navsat/fix</topicName>
+        <velocityTopicName>navsat/vel</velocityTopicName>
+        <referenceLatitude>49.9</referenceLatitude>
+        <referenceLongitude>8.9</referenceLongitude>
+        <referenceHeading>0</referenceHeading>
+        <referenceAltitude>0</referenceAltitude>
+        <drift>0.0001 0.0001 0.0001</drift>
+      </plugin>
+    </gazebo>
+    
+<!--Skis Steer -->
+<gazebo>
+  <plugin name="skid_steer_drive_controller" filename="libgazebo_ros_skid_steer_drive.so">
+    <updateRate>100.0</updateRate>
+    <robotNamespace>/</robotNamespace>
+    <leftFrontJoint>FLW_cont</leftFrontJoint>
+    <rightFrontJoint>FRW_cont</rightFrontJoint>
+    <leftRearJoint>RLW_cont</leftRearJoint>
+    <rightRearJoint>RRW_cont</rightRearJoint>
+    <wheelSeparation>0.456</wheelSeparation>
+    <wheelDiameter>0.35</wheelDiameter>
+    <robotBaseFrame>base_link</robotBaseFrame>
+    <torque>20</torque>
+    <commandTopic>cmd_vel</commandTopic>
+    <odometryTopic>odom</odometryTopic>
+    <broadcastTF>false</broadcastTF>
+  </plugin>
+</gazebo>
+    
+</robot>

@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "argo_navigation")
+set(argo_navigation_MAINTAINER "bismaya <bismaya@todo.todo>")
+set(argo_navigation_DEPRECATED "")
+set(argo_navigation_VERSION "0.0.0")
+set(argo_navigation_BUILD_DEPENDS "roslaunch")
+set(argo_navigation_RUN_DEPENDS "amcl" "frontier_exploration" "gmapping" "map_server" "move_base" "navfn" "base_local_planner" "dwa_local_planner")
+set(argo_navigation_BUILDTOOL_DEPENDS "catkin")

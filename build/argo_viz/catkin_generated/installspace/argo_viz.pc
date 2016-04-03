@@ -1,0 +1,8 @@
+prefix=/home/bismaya/catkin_ws/install
+
+Name: argo_viz
+Description: Description of argo_viz
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/bismaya/catkin_ws/install/lib 
+Requires: 

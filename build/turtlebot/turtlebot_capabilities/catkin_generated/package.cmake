@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "turtlebot_capabilities")
+set(turtlebot_capabilities_MAINTAINER "William Woodall <william@osrfoundation.org>, Marcus Liebhardt <marcus.liebhardt@yujinrobot.com>")
+set(turtlebot_capabilities_DEPRECATED "")
+set(turtlebot_capabilities_VERSION "2.3.11")
+set(turtlebot_capabilities_BUILD_DEPENDS )
+set(turtlebot_capabilities_RUN_DEPENDS "capabilities" "std_capabilities")
+set(turtlebot_capabilities_BUILDTOOL_DEPENDS "catkin")

@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "argo_description")
+set(argo_description_MAINTAINER "bismaya <bismaya@todo.todo>")
+set(argo_description_DEPRECATED "")
+set(argo_description_VERSION "0.0.0")
+set(argo_description_BUILD_DEPENDS )
+set(argo_description_RUN_DEPENDS )
+set(argo_description_BUILDTOOL_DEPENDS "catkin")

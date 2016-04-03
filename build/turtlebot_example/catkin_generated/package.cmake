@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "turtlebot_example")
+set(turtlebot_example_MAINTAINER "user <stevenw@uwaterloo.ca>")
+set(turtlebot_example_DEPRECATED "")
+set(turtlebot_example_VERSION "0.0.0")
+set(turtlebot_example_BUILD_DEPENDS "geometry_msgs" "roscpp" "rospy" "sensor_msgs" "std_msgs" "tf")
+set(turtlebot_example_RUN_DEPENDS "geometry_msgs" "roscpp" "rospy" "sensor_msgs" "std_msgs" "tf")
+set(turtlebot_example_BUILDTOOL_DEPENDS "catkin")

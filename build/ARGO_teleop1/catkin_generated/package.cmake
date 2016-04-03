@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "ARGO_teleop1")
+set(ARGO_teleop1_MAINTAINER "bismaya <bismaya@todo.todo>")
+set(ARGO_teleop1_DEPRECATED "")
+set(ARGO_teleop1_VERSION "0.0.0")
+set(ARGO_teleop1_BUILD_DEPENDS "joy" "roscpp")
+set(ARGO_teleop1_RUN_DEPENDS "joy" "roscpp")
+set(ARGO_teleop1_BUILDTOOL_DEPENDS "catkin")

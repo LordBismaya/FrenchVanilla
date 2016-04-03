@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "begineer_tutorials")
+set(begineer_tutorials_MAINTAINER "bismaya <bismaya@todo.todo>")
+set(begineer_tutorials_DEPRECATED "")
+set(begineer_tutorials_VERSION "0.0.0")
+set(begineer_tutorials_BUILD_DEPENDS "roscpp" "rospy" "std_msgs" "message_generation")
+set(begineer_tutorials_RUN_DEPENDS "roscpp" "rospy" "std_msgs" "message_runtime")
+set(begineer_tutorials_BUILDTOOL_DEPENDS "catkin")

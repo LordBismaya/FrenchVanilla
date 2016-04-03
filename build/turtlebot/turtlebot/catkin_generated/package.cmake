@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "turtlebot")
+set(turtlebot_MAINTAINER "Daniel Stonier <stonier@rnd.yujinrobot.com>, Tully Foote <tfoote@osrfoundation.org>, Michael Ferguson <mferguson@willowgarage.com>, Melonee Wise <mwise@willowgarage.com>")
+set(turtlebot_DEPRECATED "")
+set(turtlebot_VERSION "2.3.11")
+set(turtlebot_BUILD_DEPENDS )
+set(turtlebot_RUN_DEPENDS "turtlebot_bringup" "turtlebot_capabilities" "turtlebot_description" "turtlebot_teleop")
+set(turtlebot_BUILDTOOL_DEPENDS "catkin")

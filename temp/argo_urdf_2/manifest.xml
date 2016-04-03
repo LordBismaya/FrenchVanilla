@@ -1,0 +1,6 @@
+<package>
+  <description brief="argo_urdf_2">argo_urdf_2</description>
+  <depend package="gazebo" />
+  <author>me</author>
+  <license>BSD</license>
+</package>
