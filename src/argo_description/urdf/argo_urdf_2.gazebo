@@ -10,7 +10,7 @@ name="argo_urdf_2" xmlns:xacro="http://www.ros.org/wiki/xacro">
     </plugin>
   </gazebo>
   <!-- Link1 -->
-  <gazebo reference="argo_base">
+  <gazebo reference="base_link">
     <material>Gazebo/Orange</material>
   </gazebo>
 
@@ -81,7 +81,7 @@ name="argo_urdf_2" xmlns:xacro="http://www.ros.org/wiki/xacro">
       <plugin name="imu_controller" filename="libhector_gazebo_ros_imu.so">
         <robotNamespace>/</robotNamespace>
         <updateRate>50.0</updateRate>
-        <bodyName>argo_base</bodyName>
+        <bodyName>base_link</bodyName>
         <topicName>/imu/data</topicName>
         <accelDrift>0.005 0.005 0.005</accelDrift>
         <accelGaussianNoise>0.005 0.005 0.005</accelGaussianNoise>
@@ -96,8 +96,8 @@ name="argo_urdf_2" xmlns:xacro="http://www.ros.org/wiki/xacro">
       <plugin name="gps_controller" filename="libhector_gazebo_ros_gps.so">
         <updateRate>40</updateRate>
         <robotNamespace>/</robotNamespace>
-        <bodyName>argo_base</bodyName>
-        <frameId>argo_base</frameId>
+        <bodyName>base_link</bodyName>
+        <frameId>base_link</frameId>
         <topicName>navsat/fix</topicName>
         <velocityTopicName>navsat/vel</velocityTopicName>
         <referenceLatitude>49.9</referenceLatitude>
@@ -119,7 +119,7 @@ name="argo_urdf_2" xmlns:xacro="http://www.ros.org/wiki/xacro">
     <rightRearJoint>RRW_cont</rightRearJoint>
     <wheelSeparation>0.456</wheelSeparation>
     <wheelDiameter>0.35</wheelDiameter>
-    <robotBaseFrame>argo_base</robotBaseFrame>
+    <robotBaseFrame>base_link</robotBaseFrame>
     <torque>20</torque>
     <commandTopic>cmd_vel</commandTopic>
     <odometryTopic>odom</odometryTopic>

@@ -17,7 +17,7 @@
 <!--<link name="base_link"/>-->
 
   <link
-    name="argo_base">
+    name="base_link">
     <inertial>
       <origin
         xyz="-0.0287146112802265 2.27427526650059E-06 -0.0381581636610044"
@@ -59,7 +59,7 @@
  <!-- <joint name="base_link_joint" type="fixed">
       <origin xyz="0 0 0" rpy="0 0 0" />
       <parent link="base_link" />
-      <child link="argo_base" />
+      <child link="base_link" />
     </joint>-->
   <link
     name="FLW">
@@ -109,7 +109,7 @@
       xyz="0.12882 0.19812 -0.12406"
       rpy="0 -1.1994E-16 0" />
     <parent
-      link="argo_base" />
+      link="base_link" />
     <child
       link="FLW" />
     <axis
@@ -163,7 +163,7 @@
       xyz="-0.079459 0.19812 -0.12406"
       rpy="0 -1.1994E-16 0" />
     <parent
-      link="argo_base" />
+      link="base_link" />
     <child
       link="MLW" />
     <axis
@@ -217,7 +217,7 @@
       xyz="-0.28774 0.19812 -0.12406"
       rpy="0 -1.1994E-16 0" />
     <parent
-      link="argo_base" />
+      link="base_link" />
     <child
       link="RLW" />
     <axis
@@ -271,7 +271,7 @@
       xyz="0.128821215414625 -0.19812 -0.124058737135444"
       rpy="0 0 0" />
     <parent
-      link="argo_base" />
+      link="base_link" />
     <child
       link="FRW" />
     <axis
@@ -325,7 +325,7 @@
       xyz="-0.079459 -0.19812 -0.12406"
       rpy="0 -1.1994E-16 0" />
     <parent
-      link="argo_base" />
+      link="base_link" />
     <child
       link="MRW" />
     <axis
@@ -379,7 +379,7 @@
       xyz="-0.28774 -0.19812 -0.12406"
       rpy="0 -0.010714 0" />
     <parent
-      link="argo_base" />
+      link="base_link" />
     <child
       link="RRW" />
     <axis
@@ -454,18 +454,18 @@
       <joint name="laser_mount_joint" type="fixed">
         <origin xyz="$(optenv ARGO_LMS1XX_XYZ 0.2206 0.0 0.135)"
                 rpy="$(optenv ARGO_LMS1XX_RPY 0.0 0.0 0.0)" />
-        <parent link="argo_base" />
+        <parent link="base_link" />
         <child link="base_laser_mount" />
       </joint>
 
   <!--  <xacro:if value="$(arg kinect_enabled)">
 
-      <xacro:sensor_arch prefix="" parent="argo_base">
+      <xacro:sensor_arch prefix="" parent="base_link">
         <origin xyz="-0.35 0 0.51" rpy="0 0 -3.14"/>
       </xacro:sensor_arch>
       <joint name="kinect_frame_joint" type="fixed">
         <origin xyz="$(optenv ARGO_KINECT_XYZ 0 0 0)" rpy="$(optenv ARGO_KINECT_RPY 0 0.18 3.14)" />
-        <parent link="argo_base"/>
+        <parent link="base_link"/>
         <child link="camera_link"/>
       </joint>
 
@@ -478,7 +478,7 @@
     <link name="imu_link"/>
     <joint name="imu_joint" type="fixed">
       <origin xyz="$(optenv ARGO_IMU_XYZ -0.0287146112802265 2.27427526650059E-06 -0.0381581636610044)" rpy="$(optenv ARGO_IMU_RPY 0 -1.5708 3.1416)" />
-      <parent link="argo_base" />
+      <parent link="base_link" />
       <child link="imu_link" />
     </joint>
     <gazebo reference="imu_link">
