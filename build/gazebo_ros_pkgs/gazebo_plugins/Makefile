@@ -724,6 +724,48 @@ hokuyo_node/fast:
 .PHONY : hokuyo_node/fast
 
 # Convenience name for target.
+gazebo_ros_pkgs/gazebo_plugins/CMakeFiles/nav_msgs_generate_messages_cpp.dir/rule:
+	cd /home/bismaya/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 gazebo_ros_pkgs/gazebo_plugins/CMakeFiles/nav_msgs_generate_messages_cpp.dir/rule
+.PHONY : gazebo_ros_pkgs/gazebo_plugins/CMakeFiles/nav_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+nav_msgs_generate_messages_cpp: gazebo_ros_pkgs/gazebo_plugins/CMakeFiles/nav_msgs_generate_messages_cpp.dir/rule
+.PHONY : nav_msgs_generate_messages_cpp
+
+# fast build rule for target.
+nav_msgs_generate_messages_cpp/fast:
+	cd /home/bismaya/catkin_ws/build && $(MAKE) -f gazebo_ros_pkgs/gazebo_plugins/CMakeFiles/nav_msgs_generate_messages_cpp.dir/build.make gazebo_ros_pkgs/gazebo_plugins/CMakeFiles/nav_msgs_generate_messages_cpp.dir/build
+.PHONY : nav_msgs_generate_messages_cpp/fast
+
+# Convenience name for target.
+gazebo_ros_pkgs/gazebo_plugins/CMakeFiles/nav_msgs_generate_messages_lisp.dir/rule:
+	cd /home/bismaya/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 gazebo_ros_pkgs/gazebo_plugins/CMakeFiles/nav_msgs_generate_messages_lisp.dir/rule
+.PHONY : gazebo_ros_pkgs/gazebo_plugins/CMakeFiles/nav_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+nav_msgs_generate_messages_lisp: gazebo_ros_pkgs/gazebo_plugins/CMakeFiles/nav_msgs_generate_messages_lisp.dir/rule
+.PHONY : nav_msgs_generate_messages_lisp
+
+# fast build rule for target.
+nav_msgs_generate_messages_lisp/fast:
+	cd /home/bismaya/catkin_ws/build && $(MAKE) -f gazebo_ros_pkgs/gazebo_plugins/CMakeFiles/nav_msgs_generate_messages_lisp.dir/build.make gazebo_ros_pkgs/gazebo_plugins/CMakeFiles/nav_msgs_generate_messages_lisp.dir/build
+.PHONY : nav_msgs_generate_messages_lisp/fast
+
+# Convenience name for target.
+gazebo_ros_pkgs/gazebo_plugins/CMakeFiles/nav_msgs_generate_messages_py.dir/rule:
+	cd /home/bismaya/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 gazebo_ros_pkgs/gazebo_plugins/CMakeFiles/nav_msgs_generate_messages_py.dir/rule
+.PHONY : gazebo_ros_pkgs/gazebo_plugins/CMakeFiles/nav_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+nav_msgs_generate_messages_py: gazebo_ros_pkgs/gazebo_plugins/CMakeFiles/nav_msgs_generate_messages_py.dir/rule
+.PHONY : nav_msgs_generate_messages_py
+
+# fast build rule for target.
+nav_msgs_generate_messages_py/fast:
+	cd /home/bismaya/catkin_ws/build && $(MAKE) -f gazebo_ros_pkgs/gazebo_plugins/CMakeFiles/nav_msgs_generate_messages_py.dir/build.make gazebo_ros_pkgs/gazebo_plugins/CMakeFiles/nav_msgs_generate_messages_py.dir/build
+.PHONY : nav_msgs_generate_messages_py/fast
+
+# Convenience name for target.
 gazebo_ros_pkgs/gazebo_plugins/CMakeFiles/nodelet_generate_messages_cpp.dir/rule:
 	cd /home/bismaya/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 gazebo_ros_pkgs/gazebo_plugins/CMakeFiles/nodelet_generate_messages_cpp.dir/rule
 .PHONY : gazebo_ros_pkgs/gazebo_plugins/CMakeFiles/nodelet_generate_messages_cpp.dir/rule
@@ -1759,6 +1801,9 @@ help:
 	@echo "... install/local"
 	@echo "... install/strip"
 	@echo "... list_install_components"
+	@echo "... nav_msgs_generate_messages_cpp"
+	@echo "... nav_msgs_generate_messages_lisp"
+	@echo "... nav_msgs_generate_messages_py"
 	@echo "... nodelet_generate_messages_cpp"
 	@echo "... nodelet_generate_messages_lisp"
 	@echo "... nodelet_generate_messages_py"

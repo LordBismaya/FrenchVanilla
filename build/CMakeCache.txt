@@ -582,10 +582,10 @@ genpy_DIR:PATH=/opt/ros/indigo/share/genpy/cmake
 geometry_msgs_DIR:PATH=/opt/ros/indigo/share/geometry_msgs/cmake
 
 //Value Computed by CMake
-gmapping_BINARY_DIR:STATIC=/home/bismaya/catkin_ws/build/gmapping
+gmapping_BINARY_DIR:STATIC=/home/bismaya/catkin_ws/build/slam_gmapping/gmapping
 
 //Value Computed by CMake
-gmapping_SOURCE_DIR:STATIC=/home/bismaya/catkin_ws/src/gmapping
+gmapping_SOURCE_DIR:STATIC=/home/bismaya/catkin_ws/src/slam_gmapping/gmapping
 
 //Value Computed by CMake
 gtest_BINARY_DIR:STATIC=/home/bismaya/catkin_ws/build/gtest
@@ -819,6 +819,12 @@ rrbot_gazebo_SOURCE_DIR:STATIC=/home/bismaya/catkin_ws/src/gazebo_ros_demos/rrbo
 //The directory containing a CMake configuration file for sensor_msgs.
 sensor_msgs_DIR:PATH=/opt/ros/indigo/share/sensor_msgs/cmake
 
+//Value Computed by CMake
+slam_gmapping_BINARY_DIR:STATIC=/home/bismaya/catkin_ws/build/slam_gmapping/slam_gmapping
+
+//Value Computed by CMake
+slam_gmapping_SOURCE_DIR:STATIC=/home/bismaya/catkin_ws/src/slam_gmapping/slam_gmapping
+
 //The directory containing a CMake configuration file for smclib.
 smclib_DIR:PATH=/opt/ros/indigo/share/smclib/cmake
 
@@ -1016,7 +1022,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_LOCAL_GENERATORS:INTERNAL=38
+CMAKE_NUMBER_OF_LOCAL_GENERATORS:INTERNAL=37
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

@@ -162,7 +162,7 @@
         <mesh filename="package://argo_description/meshes/argo_base.STL"/>
       </geometry>
       <material name="Yellow1">
-        <color rgba="0.792156862745098 0.819607843137255 0.933333333333333 1"/>
+        <color rgba="1.0 0.423529411765 0.0392156862745 1.0"/>
       </material>
     </visual>
     <collision>
@@ -189,7 +189,7 @@
         <mesh filename="package://argo_description/meshes/FLW.STL"/>
       </geometry>
       <material name="Grey">
-        <color rgba="0.792156862745098 0.819607843137255 0.933333333333333 1"/>
+        <color rgba="0.2 0.2 0.2 1.0"/>
       </material>
     </visual>
     <collision>
@@ -219,7 +219,7 @@
         <mesh filename="package://argo_description/meshes/MLW.STL"/>
       </geometry>
       <material name="Grey">
-        <color rgba="0.792156862745098 0.819607843137255 0.933333333333333 1"/>
+        <color rgba="0.2 0.2 0.2 1.0"/>
       </material>
     </visual>
     <collision>
@@ -249,7 +249,7 @@
         <mesh filename="package://argo_description/meshes/RLW.STL"/>
       </geometry>
       <material name="Grey">
-        <color rgba="0.792156862745098 0.819607843137255 0.933333333333333 1"/>
+        <color rgba="0.2 0.2 0.2 1.0"/>
       </material>
     </visual>
     <collision>
@@ -279,7 +279,7 @@
         <mesh filename="package://argo_description/meshes/FRW.STL"/>
       </geometry>
       <material name="Grey">
-        <color rgba="0.792156862745098 0.819607843137255 0.933333333333333 1"/>
+        <color rgba="0.2 0.2 0.2 1.0"/>
       </material>
     </visual>
     <collision>
@@ -309,7 +309,7 @@
         <mesh filename="package://argo_description/meshes/MRW.STL"/>
       </geometry>
       <material name="Grey">
-        <color rgba="0.792156862745098 0.819607843137255 0.933333333333333 1"/>
+        <color rgba="0.2 0.2 0.2 1.0"/>
       </material>
     </visual>
     <collision>
@@ -339,7 +339,7 @@
         <mesh filename="package://argo_description/meshes/RRW.STL"/>
       </geometry>
       <material name="Grey">
-        <color rgba="0.792156862745098 0.819607843137255 0.933333333333333 1"/>
+        <color rgba="0.2 0.2 0.2 1.0"/>
       </material>
     </visual>
     <collision>

@@ -7,6 +7,8 @@
 # new environment variables
 
 # modified environment variables
+export HUSKY_DESCRIPTION="/opt/ros/indigo/share/husky_description/urdf/description.xacro"
+export HUSKY_GAZEBO_DESCRIPTION="/opt/ros/indigo/share/husky_gazebo/urdf/description.gazebo.xacro"
 export LD_LIBRARY_PATH="/home/bismaya/catkin_ws/install/lib/x86_64-linux-gnu:/home/bismaya/catkin_ws/devel/lib/x86_64-linux-gnu:/opt/ros/indigo/lib/x86_64-linux-gnu:/home/bismaya/catkin_ws/install/lib:/home/bismaya/catkin_ws/devel/lib:/opt/ros/indigo/lib:/opt/ros/indigo/lib/python2.7/dist-packages:/opt/ros/indigo/lib/python2.7/dist-packages"
 export PKG_CONFIG_PATH="/home/bismaya/catkin_ws/install/lib/x86_64-linux-gnu/pkgconfig:/home/bismaya/catkin_ws/devel/lib/x86_64-linux-gnu/pkgconfig:/opt/ros/indigo/lib/x86_64-linux-gnu/pkgconfig:/home/bismaya/catkin_ws/install/lib/pkgconfig:/home/bismaya/catkin_ws/devel/lib/pkgconfig:/opt/ros/indigo/lib/pkgconfig"
 export PWD="/home/bismaya/catkin_ws/build"
